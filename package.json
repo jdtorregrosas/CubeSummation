@@ -1,0 +1,28 @@
+{
+  "name": "cubesummation",
+  "version": "1.0.0",
+  "description": "Cube Summation from made in NodeJs for Rappi entrance test.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdtorregrosas/CubeSummation.git"
+  },
+  "keywords": [
+    "rappi",
+    "hackerrank",
+    "cubesummation"
+  ],
+  "author": "jdtorregrosas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jdtorregrosas/CubeSummation/issues"
+  },
+  "homepage": "https://github.com/jdtorregrosas/CubeSummation#readme",
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "mocha": "^3.2.0"
+  }
+}
