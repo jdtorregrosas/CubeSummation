@@ -19,7 +19,7 @@ function query(matrix, x1, y1, z1, x2, y2, z2) {
   for (let i = startCoords.x; i <= endCoords.x; i++) {
     for (let j = startCoords.y; j <= endCoords.y; j++) {
       for (let k = startCoords.z; k <= endCoords.z; k++) {
-        suma += matrix[i][j][k];
+        suma += parseInt(matrix[i][j][k]);
       }
     }
   }

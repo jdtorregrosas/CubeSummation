@@ -117,4 +117,14 @@ describe('# Operations', () => {
       });
     });
   });
+  describe('Fix Setup', () => {
+    it('should return an object with size of the matrix', () => {
+      const fixed = fix.fixSetup('3 5');
+      assert.equal(fixed.size, 3);
+    });
+    it('should return an object with the number of queries', () => {
+      const fixed = fix.fixSetup('3 5');
+      assert.equal(fixed.queries, 5);
+    });
+  });
 });

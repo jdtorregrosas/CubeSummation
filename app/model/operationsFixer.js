@@ -25,6 +25,15 @@ function fixOperation(line) {
 
 }
 
+function fixSetup(line) {
+  const setup = line.split(' ');
+  return {
+    size: setup[0],
+    queries: setup[1]
+  };
+}
+
 module.exports = {
-  fixOperation: fixOperation
+  fixOperation: fixOperation,
+  fixSetup: fixSetup
 };
