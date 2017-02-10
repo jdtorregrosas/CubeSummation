@@ -33,11 +33,12 @@ function cubeSummation(input){
   const lines = input.replace('\r\n', '\n').split('\n');
   let output = '';
   let current = 0;
-  const opNumber = lines[current];
+  if(isNaN(lines[current])) throw new Error('number of operations is not a number');
+  const opNumber = parseInt(lines[current]);
   current++;
   for(let j = 0; j < opNumber; j++){
-    const size = fix.fixSetup(lines[current]).size;
-    const queries = fix.fixSetup(lines[current]).queries;
+    const size = parseInt(fix.fixSetup(lines[current]).size);
+    const queries = parseInt(fix.fixSetup(lines[current]).queries);
     current++;
     let matrix = m.createMatrix(size);
     for(let i = 0; i< queries; i++){

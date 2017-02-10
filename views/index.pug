@@ -10,6 +10,11 @@ block content
             | Input
           textarea(id='input', class='form-control', rows=5, name='input') #{input}
         input.btn.btn-lg.btn-success.btn--custom(type='submit', value='Execute')
+      if error
+        div.alert.alert-danger(role="alert")
+          span.glyphicon.glyphicon-exclamation-sign(aria-hidden="true")
+          span.sr-only Error:
+          span  #{error}
       div
         label(for='output')
           | Output
