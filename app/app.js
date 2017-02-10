@@ -5,7 +5,7 @@ const m = require('./model/matrix');
 const op = require('./model/operation');
 const fix = require('./model/operationsFixer');
 
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.set('view engine', 'pug');
@@ -13,7 +13,7 @@ app.set('view engine', 'pug');
 app.get('/', function (req, res) {
   res.render('index', { output: ''});
 });
-app.post('/signup', function(req,res){
+app.post('/', function(req,res){
   const input = req.body.input;
   const lines = input.split('\r\n');
   let output = '';
