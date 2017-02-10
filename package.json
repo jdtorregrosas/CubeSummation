@@ -2,7 +2,7 @@
   "name": "cubesummation",
   "version": "1.0.0",
   "description": "Cube Summation from made in NodeJs for Rappi entrance test.",
-  "main": "index.js",
+  "main": "/app/app.js",
   "scripts": {
     "test": "mocha"
   },
