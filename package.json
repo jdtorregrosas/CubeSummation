@@ -4,6 +4,7 @@
   "description": "Cube Summation from made in NodeJs for Rappi entrance test.",
   "main": "/app/app.js",
   "scripts": {
+    "start": "node ./app/app.js",
     "test": "mocha"
   },
   "repository": {
@@ -24,5 +25,10 @@
   "devDependencies": {
     "eslint": "^3.15.0",
     "mocha": "^3.2.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11"
   }
 }

@@ -1,0 +1,14 @@
+.header {
+  text-align: center;
+}
+.footer {
+  text-align: right;
+}
+.jumbotron--custom {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.btn--custom {
+  width: 100%;
+  margin: 20px 0;
+}

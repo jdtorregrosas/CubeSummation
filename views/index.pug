@@ -1,0 +1,17 @@
+
+extends layout
+
+block content
+  div.container.theme-showcase
+    div.jumbotron.jumbotron--custom
+      form(action='/signup',method='post')
+        div.form-group
+          label(for='input')
+            | Input
+          textarea(id='input', class='form-control', rows=5, name='input')
+        input.btn.btn-lg.btn-success.btn--custom(type='submit', value='Execute')
+      div
+        label(for='output')
+          | Output
+        div
+          textarea(id='output', class='form-control', rows=5) #{output}
